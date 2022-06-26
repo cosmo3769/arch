@@ -1,1 +1,3 @@
 # config-files-arch-linux
+
+All my config files for arch linux will be here. Be it i3wm, picom, alacritty, vim, neovim, etc, etc, etc.....
