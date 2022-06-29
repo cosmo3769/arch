@@ -1,17 +1,25 @@
-`df -h`
+# Important commands: 
 
-`du -sh /*`
+`cd` - change directory
 
-`lsblk`
+`ls` `ls -a` - list
 
-`fdisk`
+`mv` - move file to different location/ rename 
 
-`cfdisk`
+`df -h` - disk free
 
-`updatedb` `locate` `plocate`
+`du -sh /*` - disk usage
 
-`pacman -S`
+`lsblk` - lists information about all available or the specified block devices
 
-`pacman -Syyu`
+`fdisk` - fixed disk/format disk
 
-`pacman -Rncs`
+`cfdisk` - create, delete, and modify partitions on a disk device (graphical interface)
+
+`updatedb` `locate` `plocate` - update database, locate file/folder
+
+`pacman -S` - install package
+
+`pacman -Syyu` - update and upgrade package
+
+`pacman -Rns` - remove all the dependency and package 
