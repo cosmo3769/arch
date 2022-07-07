@@ -27,3 +27,5 @@
 - [i3wm config](https://github.com/cosmo3769/arch/blob/main/.config/i3/config)
  
 - [picom](https://github.com/cosmo3769/arch/blob/main/.config/picom/picom.conf)
+
+- [alacritty](https://github.com/cosmo3769/arch/blob/main/.config/alacritty/alacritty.yml)
