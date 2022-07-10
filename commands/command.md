@@ -2,7 +2,7 @@
 
 `cd` - change directory
 
-`ls` `ls -a` - list
+`ls` `ls -a` - list/list all
 
 `mv` - move file to different location/ rename 
 
@@ -23,3 +23,5 @@
 `pacman -Syyu` - update and upgrade package
 
 `pacman -Rns` - remove all the dependency and package 
+
+`neofetch` - about Linux/system running details(time)
