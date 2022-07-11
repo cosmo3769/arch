@@ -2,8 +2,8 @@
 
 # Contents
 
-* What is Arch Linux
-* Why Arch Linux
+* What is Arch Linux?
+* Why Arch Linux?
 * Why a shift from Windows to Ubuntu to Arch?
 * Installation 
 * Display Manager 
