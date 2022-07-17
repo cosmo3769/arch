@@ -29,3 +29,7 @@
 - [picom](https://github.com/cosmo3769/arch/blob/main/.config/picom/picom.conf)
 
 - [alacritty](https://github.com/cosmo3769/arch/blob/main/.config/alacritty/alacritty.yml)
+
+# Some resolved problems
+
+- [keybinds for brightness](https://github.com/cosmo3769/arch/blob/main/brightness-arch/README.md)
