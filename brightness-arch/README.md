@@ -1,5 +1,3 @@
-I ran into an issue in i3wm on my laptop where, for whatever reason, my XF86MonBrightnessUp/Down keys weren't being registered. So, I have to create acpi actions and events which corresponded to the keys being pressed.
-
 In i3 config file I was using bindsym for XF86MonBrightnessUp/Down keys to control brightness with 
 function keys. But, it never worked. So, while looking for an answer I found this [reference](https://unix.stackexchange.com/questions/322814/xf86monbrightnessup-xf86monbrightnessdown-special-keys-not-working/427572#427572) where actions/events were created using acpid service.
 
@@ -13,13 +11,13 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5000
 
 The following are the actions/events I defined in /etc/acpi/actions and /etc/acpi/events, respectively:
 
-## install acpi
+## install acpid
 
 `sudo pacman -S acpid`
 
 ## acpi event code for brightness keys
 
-`acpi-listen` - to see the acpi event codes by pressing the particular keys. (in my case: brightness-up-F4, brightness-down=F3) 
+`acpi-listen` - to see the acpi event codes by pressing the particular keys. (in my case: brightness-up=F4, brightness-down=F3) 
 
 Running this gave me this error `acpi_listen: can't open socket /var/run/acpid.socket: No such file or directory`
 
@@ -51,6 +49,8 @@ bl_device=/sys/class/backlight/intel-backlight/brightness
 echo $(($(cat $bl_device)+2000)) | sudo tee $bl_device
 ```
 
+**NOTE-** You will find your **bl_device** by checking in your system with `ls /sys/class/backlight/`. After this it can be intel_backlight or acpi_video0 or something else in your system. Ensure to inlcude the one showing in your system. 
+
 ## Setting Events
 
 Make this file `/etc/acpi/events/bl-down` for triggering brightness down events.
@@ -71,6 +71,8 @@ event=video/brightnessup BRTUP 00000086 00000000
 action=/etc/acpi/actions/bl-up.sh
 ```
 
+**NOTE-** You will find your acpi event code by running acpi_listen and pressing on brightness up/down keys. Copy your acpi event code in **event**.
+
 ## Execute Actions scripts 
 
 `sudo chmod +x /etc/acpi/actions/bl-down.sh`
@@ -79,16 +81,16 @@ action=/etc/acpi/actions/bl-up.sh
 
 ## Reload acpid 
 
-I was going through one reference to how to set actions and events where the way to reload the acpid
-was not working for me. So I did it this way.
+When going through the above reference of how to set actions and events, the way to reload the acpid
+is different in my case. I have systemctl to interact with any services in my machine, so here is how it works: 
 
 `sudo systemctl restart acpid.service`
 
-`sudo systemctl restart acpid`
-
 & voila my brightness keybinds works now. 
 
-Before leaving one thing you shoulf note that I have still not enabled the acpid service. I have just 
+## Enable acpid service
+
+Before leaving one thing you should note that I have still not enabled the acpid service. I have just 
 started the service which will be disabled after reboot or poweroff of the system. So to keep it 
 enabled, run: 
 
