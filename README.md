@@ -30,6 +30,6 @@
 
 - [alacritty](https://github.com/cosmo3769/arch/blob/main/.config/alacritty/alacritty.yml)
 
-# Some resolved problems
+# Some resolved issues
 
 - [keybinds for brightness](https://github.com/cosmo3769/arch/blob/main/brightness-arch/README.md)
