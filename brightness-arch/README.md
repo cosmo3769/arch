@@ -1,5 +1,15 @@
-I ran into an issue upon a fresh installation of i3wm on my laptop where, for whatever reason, my XF86MonBrightnessUp/Down keys weren't being 
-registered (I checked with xev). What I ended up doing is creating acpi actions and events which corresponded to the keys being pressed.
+I ran into an issue in i3wm on my laptop where, for whatever reason, my XF86MonBrightnessUp/Down keys weren't being registered. So, I have to create acpi actions and events which corresponded to the keys being pressed.
+
+In i3 config file I was using bindsym for XF86MonBrightnessUp/Down keys to control brightness with 
+function keys. But, it never worked. So, while looking for an answer I found this [reference](https://unix.stackexchange.com/questions/322814/xf86monbrightnessup-xf86monbrightnessdown-special-keys-not-working/427572#427572) where actions/events were created using acpid service.
+
+This was the bindsym I was using with xbacklight in i3 config: 
+
+```
+# Use xbacklight to control brightness with keyboard
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5000
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5000
+```
 
 The following are the actions/events I defined in /etc/acpi/actions and /etc/acpi/events, respectively:
 
