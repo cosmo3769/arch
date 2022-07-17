@@ -9,7 +9,9 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5000
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5000
 ```
 
-The following are the actions/events I defined in /etc/acpi/actions and /etc/acpi/events, respectively:
+When this was not working and I couldn't find the solution to keybind my brightness keys, I was manually increasing and decreasing my brightness from the terminal, either with updating the values of `/sys/class/backlight/intel-backlight/brightness` or running this command `xbacklight -inc 2000` to increase the brightness and `xbacklight -dec 2000` to decrease the brightness.
+
+So, finally I made it easier using acpi events. The following are the actions/events I defined in /etc/acpi/actions and /etc/acpi/events, respectively:
 
 ## install acpid
 
