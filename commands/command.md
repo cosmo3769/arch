@@ -25,3 +25,7 @@
 `pacman -Rns` - remove all the dependency and package 
 
 `neofetch` - about Linux/system running details(time)
+
+`xmodmap -pke` - [utility for modifying keymaps](https://wiki.archlinux.org/title/xmodmap)
+
+`showkey -a` - show the key and keycode 
