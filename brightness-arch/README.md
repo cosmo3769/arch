@@ -13,7 +13,7 @@ When this was not working and I couldn't find the solution to keybind my brightn
 
 So, finally I made it easier using acpi events. The following are the actions/events I defined in /etc/acpi/actions and /etc/acpi/events, respectively:
 
-## install acpid
+## Install acpid
 
 `sudo pacman -S acpid`
 
