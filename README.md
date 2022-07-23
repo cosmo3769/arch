@@ -33,3 +33,11 @@
 # Some resolved issues
 
 - [keybinds for brightness](https://github.com/cosmo3769/arch/blob/main/brightness-arch/README.md)
+
+# Useful Resources
+
+- [archlinux.org](https://archlinux.org/)
+
+- [wiki.archlinux.org](https://wiki.archlinux.org/)
+
+- [Vim Awesome](https://vimawesome.com/) - Plugins for vim
