@@ -40,4 +40,8 @@
 
 - [wiki.archlinux.org](https://wiki.archlinux.org/)
 
+- [Dual Boot arch linux with windows](https://www.youtube.com/watch?v=JRdYSGh-g3s&t=1524s)
+
+- [Wired and wireless internet from the command line](https://www.youtube.com/watch?v=IkI7nNxsh7I)
+
 - [Vim Awesome](https://vimawesome.com/) - Plugins for vim
