@@ -44,4 +44,6 @@
 
 - [Wired and wireless internet from the command line](https://www.youtube.com/watch?v=IkI7nNxsh7I)
 
+- [Vim Tutorial](https://www.youtube.com/watch?v=H3o4l4GVLW0&t=236s)
+
 - [Vim Awesome](https://vimawesome.com/) - Plugins for vim
