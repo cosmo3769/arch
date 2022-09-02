@@ -42,6 +42,8 @@
 
 - [Dual Boot arch linux with windows](https://www.youtube.com/watch?v=JRdYSGh-g3s&t=1524s)
 
+- [Dual boot windows with arch Linux](https://github.com/cosmo3769/arch/blob/main/install_windows_dual_boot/README.md)
+
 - [Wired and wireless internet from the command line](https://www.youtube.com/watch?v=IkI7nNxsh7I)
 
 - [Vim Tutorial The Primegan](https://www.youtube.com/watch?v=H3o4l4GVLW0&t=236s)
