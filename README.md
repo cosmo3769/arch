@@ -51,3 +51,5 @@
 - [Vim Tutorial Freecodecamp](https://www.youtube.com/watch?v=RZ4p-saaQkc&t=263s)
 
 - [Vim Awesome](https://vimawesome.com/) - Plugins for vim
+
+- [Fix grub bootloader in arch](https://www.google.com/amp/s/www.addictivetips.com/ubuntu-linux-tips/re-install-grub-on-arch-linux/amp/)
