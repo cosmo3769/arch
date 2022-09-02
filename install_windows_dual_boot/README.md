@@ -6,4 +6,8 @@
 * Start the installation of Windows in the free space given.
 * Update grub bootloader to include windows os. 
 
+## Reference
+
+[Dual boot Windows on an existing Linux system](https://itsfoss.com/install-windows-after-ubuntu-dual-boot/)
+
 ### More detailed explanation coming soon...
