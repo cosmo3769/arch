@@ -29,3 +29,21 @@
 `xmodmap -pke` - [utility for modifying keymaps](https://wiki.archlinux.org/title/xmodmap)
 
 `showkey -a` - show the key and keycode 
+
+### Mount iso image 
+
+* Download iso image
+* Go to terminal, create directory with `mkdir /mnt/iso` or `sudo mkdir /mnt/iso`
+* Type in `mount -o loop /path/to/your/iso/ /mnt/iso/`
+
+### Mount flash drives
+
+* Plug in usb
+* `fdisk -l`
+* find something with `/dev/sdb1`
+* create directory with `mkdir /mnt/usbstick` or `sudo mkdir /mnt/usbstick`
+* `mount /dev/sdb1 /mnt/usbstick/`
+
+### Unmount 
+
+* `umount /mnt/iso` or `umount /mnt/usbstick`
