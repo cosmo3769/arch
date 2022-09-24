@@ -47,3 +47,7 @@
 ### Unmount 
 
 * `umount /mnt/iso` or `umount /mnt/usbstick`
+
+### Conflict while updating and upgrading with pacman due to npm 
+
+* Run this `sudo pacman -S npm --overwrite '/usr/lib/node_modules/npm/*'` to get your issue solved.
