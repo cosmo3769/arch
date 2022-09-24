@@ -34,6 +34,8 @@
 
 - [keybinds for brightness](https://github.com/cosmo3769/arch/blob/main/brightness-arch/README.md)
 
+- [Setting up bluetooth](https://github.com/cosmo3769/arch/blob/main/set_bluetooth/README.md)
+
 # Useful Resources
 
 - [archlinux.org](https://archlinux.org/)
